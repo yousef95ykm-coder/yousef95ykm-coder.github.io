@@ -102,4 +102,21 @@ footer {
     <input type="text" placeholder="اسمك">
     <input type="email" placeholder="بريدك الإلكتروني">
     <textarea placeholder="اكتب رسالتك..."></textarea>
-    <button onclick="sendMessage()">إرسال</
+    <button onclick="sendMessage()">إرسال</button>
+    <p id="msg"></p>
+  </div></div><footer>
+  © 2026 حلا الواقع - جميع الحقوق محفوظة
+</footer><script>
+function showPage(page) {
+  document.getElementById('home').classList.add('hidden');
+  document.getElementById('old').classList.add('hidden');
+  document.getElementById('contact').classList.add('hidden');
+
+  document.getElementById(page).classList.remove('hidden');
+}
+
+function sendMessage() {
+  document.getElementById('msg').innerText = "تم إرسال الرسالة بنجاح!";
+}
+</script></body>
+</html>
